@@ -1,2 +1,2 @@
 # Portfolio
-Link: https://kyouma-san.github.io/
+Link: https://kyouma-san.github.io/Portfolio/
