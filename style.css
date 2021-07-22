@@ -160,7 +160,7 @@ p{
 }
 #about .col-right .cta{
     color: black;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     padding: 10px 20px;
     margin-left: 10px;
     margin-right: 10px;
@@ -169,6 +169,7 @@ p{
 #about .col-left .about-img{
     height: 100%;
     width: 100%;
+    margin-top: 50px;
     position: relative;
     border: 10px solid white;
 }
@@ -262,53 +263,75 @@ p{
 
 
 /* Projects Section */
-#projects .projects{
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 0;
+#projects .projects {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
 }
-#projects .projects-header h1{
-    margin-bottom: 50px;
+#projects .projects-header h1 {
+	margin-bottom: 50px;
 }
-#projects .all-projects{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+#projects .all-projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
-#projects .project-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 80%;
-    margin: 20px auto;
-    overflow: hidden;
-    border-radius: 10px;
+#projects .project-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
 }
-#projects .project-info{
-    padding: 30px;
-    flex-basis: 50%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    color: white;
+#projects .project-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
 }
-#projects .project-info h1{
-    font-size: 4rem;
-    font-weight: 500;
+#projects .project-info h1 {
+	font-size: 4rem;
+	font-weight: 500;
 }
-#projects .project-info h2{
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin-top: 10px;
+#projects .project-info h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 10px;
 }
-#projects .project-info p{
-    color: white;
+#projects .project-info p {
+	color: white;
+}
+#projects .project-img {
+	flex-basis: 50%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#projects .project-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.7;
+}
+#projects .project-img img {
+	transition: 0.3s ease transform;
+}
+#projects .project-item:hover .project-img img {
+	transform: scale(1.1);
 }
 /* End of Projects Section */
 
@@ -380,7 +403,22 @@ p{
     display: flex;
     margin-bottom: 30px;
 }
-
+#footer .social-item{
+    height: 50px;
+    width: 50px;
+    margin: 0 5xp;
+}
+#footer .social-item img{
+    filter: grayscale(1);
+    transition: .3s ease filter;
+}
+#footer .social-item:hover img{
+    filter: grayscale(0);
+}
+#footer p{
+    color: white;
+    font-size: 1.3rem;
+}
 /* End Footer */
 
 /* Keyframes */
@@ -405,4 +443,52 @@ p{
         font-weight: 500;
     }    
 }
-/* End Keyframes roohan */
+/* End Keyframes */
+
+/* Media Query for Tablet */
+@media only screen and (min-width:589px){
+    .cta{
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+    h1.section-title{
+        font-size: 6rem;
+    }
+
+    /* Main */
+    #main h1{
+        font-size: 7rem;
+    }
+    /* End of Main */
+
+    /* Experience */
+    #experience .experience-bottom .experience-item{
+        flex-basis: 45%;
+        margin: 1.5%;
+    }
+    /* End of Experience */
+
+    /* Projects */
+    #projects .project-item{
+        flex-direction: row;
+    }
+    #projects .project-item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    #projects .project-item{
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #projects .all-projects .project-info{
+        height: 100%;
+    }
+    #projects .all-projects .project-img{
+        height: 100%;
+    }
+    /* End of Projects */
+
+
+}
+/* End Media Query for Tablet */
