@@ -7,6 +7,7 @@
 html{
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 a {
     text-decoration: none;
@@ -107,7 +108,7 @@ p{
 	align-items: center;
 	z-index: 1;
 	overflow-x: hidden;
-	transition: 0.5s ease left;
+	transition: 0.8s ease left;
 }
 #header .nav-list ul.active {
 	left: 0%;
@@ -132,7 +133,7 @@ p{
 	font-size: 13rem;
 	letter-spacing: 50px;
 	z-index: -1;
-	transition: 0.8s ease letter-spacing;
+	transition: 0.3s ease letter-spacing;
 }
 #header .nav-list ul li:hover a::after {
 	transform: translate(-50%, -50%) scale(1);
@@ -369,17 +370,18 @@ p{
 #experience .experience-item h2{
     font-size: 2rem;
     color: white;
-    margin-bottom: 5px; 
+    margin-bottom: 10px; 
     text-transform: uppercase;
     text-align: left;
 }
 #experience .experience-item h3{
     font-size: 1.5rem;
     color: white;
-    margin-bottom: 10px; 
+    margin-bottom: 5px; 
     text-align: left;
 }
 #experience .experience-item p{
+    margin-top: 15px;
     color: white;
     text-align: left;
     font-size: 1.4rem;
@@ -601,7 +603,7 @@ p{
     /* Experience */
     #experience .experience-bottom .experience-item{
         flex-basis: 45%;
-        margin: 1.5%;
+        margin: 2.5%;
     }
     /* End of Experience */
 
@@ -704,12 +706,16 @@ p{
 		height: auto;
 		width: fit-content;
 		background-color: transparent;
+        padding-right: 20rem;
+        margin: 0;
+        text-align: center;
 	}
 	#header .nav-list ul li {
 		display: inline-block;
 	}
 	#header .nav-list ul li a {
 		font-size: 1.8rem;
+        font-weight: 600;
 	}
 	#header .nav-list ul a:after {
 		display: none;
