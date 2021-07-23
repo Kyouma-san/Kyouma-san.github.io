@@ -331,7 +331,6 @@ p{
 }
 #experience .experience-bottom {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
@@ -351,6 +350,10 @@ p{
     z-index: 1;
     overflow: hidden;
 }
+#services .service-item:hover{
+    transform: scale(1.09);
+   
+   }
 #experience .experience-item::after{
     content: '';
     position: absolute;
@@ -549,6 +552,30 @@ p{
     font-size: 1.3rem;
 }
 /* End Footer */
+
+#back2Top {
+    display: none; 
+  position: fixed;
+  bottom: 20px; 
+  right: 30px;
+  z-index: 99;
+  border: none; 
+  outline: none; 
+  background-color: crimson; 
+  color: white; 
+  cursor: pointer; 
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px; 
+}
+#back2Top:hover {
+    background-color: #555;
+}
 
 /* Keyframes */
 @keyframes hamburger_puls {
