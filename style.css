@@ -383,7 +383,7 @@ p{
     margin-bottom: 5px; 
     text-align: left;
 }
-#experience .experience-item p{
+#experience .experience-item ul li{
     margin-top: 15px;
     color: white;
     text-align: left;
