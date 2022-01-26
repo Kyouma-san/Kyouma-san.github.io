@@ -281,13 +281,15 @@ p{
     width: 100%;
 }
 #about .col-right h2{
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: 500;
     letter-spacing: .2rem;
     margin-bottom: 10px;
 }
 #about .col-right p{
     margin-bottom: 20px;
+    font-size: 1.8rem;
+    
 }
 #about .col-right .cta{
     color: black;
@@ -328,6 +330,9 @@ p{
 #experience .experience-top{
     max-width: 500px;
     margin: 0 auto;
+}
+#experience .experience-top p{
+    font-size: 2rem;
 }
 #experience .experience-bottom {
     display: flex;
@@ -371,14 +376,14 @@ p{
     margin-bottom: 20px;
 }
 #experience .experience-item h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: white;
     margin-bottom: 10px; 
     text-transform: uppercase;
     text-align: left;
 }
 #experience .experience-item h3{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     color: white;
     margin-bottom: 5px; 
     text-align: left;
@@ -387,7 +392,7 @@ p{
     margin-top: 15px;
     color: white;
     text-align: left;
-    font-size: 1.4rem;
+    font-size: 2rem;
     line-height: 1.9rem;
 }
 /* End of Experience Section */
@@ -439,6 +444,20 @@ p{
 	font-weight: 500;
 	margin-top: 10px;
 }
+#projects .project-info .code {
+    margin-top: 8px;
+    margin-bottom: 8px;
+	display: flex;
+    flex-wrap: wrap;
+}
+#projects .project-info .link1 {
+	margin-right: 10px;
+}
+#projects .project-info .links {
+	padding: 6px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
 #projects .project-info a {
 	font-size: 1.8rem;
 	font-weight: 500;
@@ -447,6 +466,7 @@ p{
 }
 #projects .project-info p {
 	color: white;
+    font-size: 1.8rem;
 }
 #projects .project-img {
 	flex-basis: 50%;
